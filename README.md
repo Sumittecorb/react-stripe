@@ -1,1 +1,3 @@
-# react-stripe
+# React Stripe.js reference
+
+
