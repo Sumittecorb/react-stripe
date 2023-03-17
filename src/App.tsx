@@ -1,6 +1,7 @@
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
 import CheckoutForm from "./Component/CardElement";
+import PayCard from "./Component/WildLife";
 
 // Make sure to call `loadStripe` outside of a component’s render to avoid
 // recreating the `Stripe` object on every render.
@@ -15,7 +16,8 @@ export default function App() {
   return (
     <>
       <Elements stripe={stripePromise}>
-        <CheckoutForm />
+        {/* <CheckoutForm /> */}
+        <PayCard/>
       </Elements>
     </>
   );
