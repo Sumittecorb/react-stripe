@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,119 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.cardContainer{}
+.cardContainer .payBtn{
+  background-color: #525ed2;
+  color: white;
+}
+.cardContainer .payBtn button{
+  opacity: 0.7
+}
+
+
+.PaymainCard{
+  width: 800px;
+  box-shadow: 1px 1px 18px #ccc;
+  background-color: #8acaf121;
+}
+.PaymainCard .headerSection .imgSection{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: auto;
+}
+.PaymainCard .headerSection .imgSection img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.PaymainCard .headerSection h1{
+  font-size: 25px;
+    opacity: 0.8;
+    font-weight: 500;
+}
+
+.PaymainCard .headerSection ul li a{
+  color: black;
+  opacity: 0.7;
+}
+.PaymainCard .headerSection ul li a.active{
+  opacity: 1;
+}
+.PaymainCard .headerSection ul li svg{
+  width: 20px;
+}
+.PaymainCard .gridSystem .leftColumd{ 
+  /* border-right: 1px solid #ccc !important; */
+  border-radius: 0px ;
+  background-color: #8acaf100;
+  width: 500px;
+}
+.PaymainCard .gridSystem .leftColumd .innerCard{
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+.PaymainCard .gridSystem .leftColumd .innerCard .iconArea img{
+  margin-right: 20px;
+}
+
+.PaymainCard .gridSystem .leftColumd .innerCard h6{
+  opacity: 0.6;
+  font-size: 18px;
+}
+.PaymainCard .gridSystem .leftColumd .innerCard .dataContainer{
+  padding: 0px 15px;
+}
+.PaymainCard .gridSystem .leftColumd .innerCard .dataContainer .inputArea{
+  border: 1px solid #ccc;
+  background-color: white;
+  padding: 5px;
+}
+
+.PaymainCard .gridSystem .leftColumd .innerCard .dataContainer .inputArea label{
+  padding-left:10px;
+}
+.PaymainCard .gridSystem .leftColumd .innerCard .dataContainer .inputArea input{
+  border: none;
+  background-color: white;
+}
+.PaymainCard .gridSystem .leftColumd .innerCard .dataContainer .inputArea input:focus-visible{
+  border: none !important;
+  outline: none !important;
+}
+.PaymainCard .gridSystem .leftColumd .payBtn{
+  background-color: blue;
+  color: white;
+  border-radius: 7px;
+}
+
+
+.PaymainCard .gridSystem .rightColumn{
+  padding-top: 25px;
+}
+.PaymainCard .gridSystem .rightColumn h2{
+  margin-top: 20px;
+  font-size: 25px;
+  opacity: 0.5;
+}
+.PaymainCard .gridSystem .rightColumn h3{
+  margin-top: 10px;
+  font-size: 22px;
+}
+.PaymainCard .gridSystem .rightColumn h4{
+ padding-bottom:10px; 
+ color: #22211F;
+ font-size: 20px;
+}
+.PaymainCard .gridSystem .rightColumn h5{
+  padding-bottom:10px; 
+}
+.PaymainCard .gridSystem .rightColumn p{
+  padding: 5px 0px;
+  color: #7B766B;
+
 }
